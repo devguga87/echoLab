@@ -1,15 +1,31 @@
 package br.com.alura.minhasmusicas.principal;
 
+import br.com.alura.minhasmusicas.modelos.Musica;
+import br.com.alura.minhasmusicas.modelos.Podcast;
+
 public class Principal {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Musica minhaMusica = new Musica();
+        minhaMusica.setTitulo("Forever");
+        minhaMusica.setArtista("Kiss");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        for (int i = 0; i < 1000; i++) {
+            minhaMusica.reproduz();
+        }
+
+        for (int i = 0; i < 50; i++) {
+            minhaMusica.curte();
+        }
+
+        Podcast meuPodcast = new Podcast();
+        meuPodcast.setTitulo("BolhaDev");
+        meuPodcast.setHost("Marcus Mendes");
+
+        for (int i = 0; i < 500; i++) {
+            meuPodcast.reproduz();
+        }
+        for (int i = 0; i < 100; i++) {
+            meuPodcast.curte();
         }
     }
 }
