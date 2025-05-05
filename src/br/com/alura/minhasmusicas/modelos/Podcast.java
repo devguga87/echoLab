@@ -1,6 +1,6 @@
 package br.com.alura.minhasmusicas.modelos;
 
-public class Podcast extends Audio{
+public class Podcast extends Audio {
     private String host;
     private String descricao;
 
